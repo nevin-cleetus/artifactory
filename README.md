@@ -6,9 +6,12 @@
 JDK 1.8
 sudo yum install java-1.8.0-openjdk-devel
 
-Installing Artifactory
+# Installing Artifactory
+
 wget https://bintray.com/jfrog/artifactory-rpms/rpm -O bintray-jfrog-artifactory-rpms.repo
+
 sudo mv bintray-jfrog-artifactory-rpms.repo /etc/yum.repos.d/
+
 sudo yum install jfrog-artifactory-oss
 
 
