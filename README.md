@@ -1,22 +1,31 @@
-# artifactory
+## artifactory
 
 
-sudo yum install java-1.8.0
+# Installation
 
-wget https://bintray.com/jfrog/artifactory-pro-rpms/rpm -O bintray-jfrog-artifactory-pro-rpms.repo
+JDK 1.8
+sudo yum install java-1.8.0-openjdk-devel
 
-sudo mv bintray-jfrog-artifactory-pro-rpms.repo /etc/yum.repos.d/
+Installing Artifactory
+wget https://bintray.com/jfrog/artifactory-rpms/rpm -O bintray-jfrog-artifactory-rpms.repo
+sudo mv bintray-jfrog-artifactory-rpms.repo /etc/yum.repos.d/
+sudo yum install jfrog-artifactory-oss
 
- yum install jfrog-artifactory-pro
 
+# Update the Java options and the artifactory related path
 
-cd /etc/opt/jfrog/artifactory/
+vi artifactory.default  and update the Xms value to 1g
 
-vi default
+export JAVA_OPTIONS="-server -Xms512m -Xmx1g…. 
+export ARTIFACTORY_HOME=/var/opt/jfrog/artifactory
 
-Update JAVA_HOME
+# Running Artifactory
+To start or stop Artifactory you must be running as root and can use the following command:
+            cd /opt/jfrog/artifactory/bin$service artifactory start | stop
 
-export JAVA_OPTIONS="-server -Xms512m -Xmx1g 
+# Setup Service
+sudo service artifactory start
+
 
 
 
