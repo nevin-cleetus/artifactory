@@ -24,7 +24,10 @@ export ARTIFACTORY_HOME=/var/opt/jfrog/artifactory
 
 # Running Artifactory
 To start or stop Artifactory you must be running as root and can use the following command:
-            cd /opt/jfrog/artifactory/bin$service artifactory start | stop
+
+cd /opt/jfrog/artifactory/bin
+
+$service artifactory start | stop
 
 # Setup Service
 sudo service artifactory start
