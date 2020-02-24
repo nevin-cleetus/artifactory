@@ -103,7 +103,8 @@ sudo systemctl start nginx
 Maven Installation
 
 	/opt>sudo su –
-            /opt>wget http://apachemirror.wuchna.com/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz
+        
+	/opt>wget http://apachemirror.wuchna.com/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz
 
         /opt>tar -xvf apache-maven-3.6.3-bin.tar.gz
 	
@@ -115,6 +116,7 @@ Maven Installation
 	
 
 	/opt>mkdir gitrepo
+	
 /opt>cd gitrepo
 
 /opt/gitrepo>git clone https://github.com/nevin-cleetus/hello.git
