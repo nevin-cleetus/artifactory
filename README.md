@@ -39,6 +39,7 @@ To start or stop Artifactory you must be running as root and can use the followi
 cd /opt/jfrog/artifactory/bin$service artifactory start | stop
 
 # Setup Service
+
 sudo service artifactory start
 	
 Test the artifactory URL using the below link.
@@ -46,9 +47,6 @@ Test the artifactory URL using the below link.
 http://<ip address>:8081/artifactory (admin/password)
 
 
-
-
-	
 	
 # Database Configuration
 
